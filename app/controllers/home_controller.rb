@@ -9,7 +9,7 @@ class HomeController < ApplicationController
     @address = params[:address]
     @content = params[:content]
     
-    mg_client = Mailgun::Client.new("key-22efe9b99ddcf23f2d5ae5e860ccecbc")
+    mg_client = Mailgun::Client.new("key")
     
     message_params =  {
                        from: @myaddress,
